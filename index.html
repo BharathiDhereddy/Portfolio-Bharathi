@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    
+    <!--Navbar Creation -->
+    <nav id="desktop-nav">
+      
+        <div class="logo">Bharathi Dhereddy</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li> 
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Bharathi Dhereddy</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+
+
+      <!--Profile Section-->
+      
+        <div class="container">
+        <div class="section__text"> 
+          
+          <p class="section__text__p1">Hello, I'm</p>
+          <h1 style="color:white" class="title" >Bharathi Dhereddy</h1>
+          
+          
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/bharathi-dhereddy/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/BharathiDhereddy'"
+            />
+         
+         </div>
+
+         <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Bharathi_Dhereddy.pdf')"
+          >
+            Download CV
+          </button>
+         
+        </div>
+
+        </div>
+      </div>
+     
+
+
+ <!-- About Section -->
+ <div id="about">
+  <div class="container1">
+      <div class="row">
+          <div class="about-col-1">
+              <img src="assets/pic.png" alt="Bharathi Dhereddy">
+          </div>
+          <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>I'm Bharathi Dhereddy, a Computer Science graduate specializing in AI and ML from Gayatri Vidya Parishad College of Engineering for Women. I have a strong foundation in Python, Machine learning, SQL, and frontend technologies. I'm passionate about applying my knowledge to real-world problems.</p>
+              
+              <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+
+              </div>
+              
+              <div class="tab-contents active-tab" id="experience">
+                  <ul>
+                      <li><span>Feb 2024 - April 2024</span><br>MERN Stack Intern</li>
+                      <li><span>Feb 2024 - April 2024</span><br>React Intern</li>
+                  </ul>
+              </div>
+              
+              <div class="tab-contents" id="education">
+                <!-- Education content goes here -->
+                <ul>
+                  <li><span>B.Tech   2020-2024</span><br>CSE -AI & ML</li>
+                  
+              </ul>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+</div>
+
+
+ <!--Project section-->
+ 
+ <section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1><br>
+  
+  <div class="projects-container">
+    <div class="project-item">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project1.jpg" alt="Project 1" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Remote Sensing</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="project-item">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/HomelyHub.png" alt="Project 2" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Homely Hub</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="project-item">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Recipe Finder</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+        </div>
+        <h2 class="experience-sub-title project-title">Recipe Finder</h2>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Github
+          </button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+<!-- Cards container -->
+<div id="skills">
+<div class="container-card">
+  <h1 class="title">My Skills</h1>
+  <div class="row-card">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+          <div class="card">
+              <img src="assets/python.png" class="card-img-top" alt="AnnualCrop">
+              <div class="overlay"> <!-- Add overlay div -->
+                  <div class="text"> <!-- Content to display on hover -->
+                      <p>Python</p>
+                  </div>
+              </div>
+              <div class="card-body">
+                  
+              </div>
+          </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+          <div class="card">
+              <img src="assets/ml.jpg" class="card-img-top" alt="AnnualCrop">
+              <div class="overlay"> <!-- Add overlay div -->
+                  <div class="text"> <!-- Content to display on hover -->
+                      <p>Machine Learning</p>
+                  </div>
+              </div>
+              <div class="card-body">
+                  
+              </div>
+          </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+          <div class="card">
+              <img src="assets/java.png" class="card-img-top" alt="AnnualCrop">
+              <div class="overlay"> <!-- Add overlay div -->
+                  <div class="text"> <!-- Content to display on hover -->
+                      <p>Java</p>
+                  </div>
+              </div>
+              <div class="card-body">
+                  
+              </div>
+          </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="col-md-4">
+          <div class="card">
+              <img src="assets/html.jpg" class="card-img-top" alt="AnnualCrop">
+              <div class="overlay"> <!-- Add overlay div -->
+                  <div class="text"> <!-- Content to display on hover -->
+                      <p>HTML</p>
+                  </div>
+              </div>
+              <div class="card-body">
+                  
+              </div>
+          </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-md-4">
+          <div class="card">
+              <img src="assets/css.png" class="card-img-top" alt="AnnualCrop">
+              <div class="overlay"> <!-- Add overlay div -->
+                  <div class="text"> <!-- Content to display on hover -->
+                      <p>CSS</p>
+                  </div>
+              </div>
+              <div class="card-body">
+                  
+              </div>
+          </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-md-4">
+          <div class="card">
+              <img src="assets/sql.png" class="card-img-top" alt="AnnualCrop">
+              <div class="overlay"> <!-- Add overlay div -->
+                  <div class="text"> <!-- Content to display on hover -->
+                      <p>SQL</p>
+                  </div>
+              </div>
+              <div class="card-body">
+                  
+              </div>
+          </div>
+      </div>
+      <!-- Card 7 -->
+      <div class="col-md-4">
+          <div class="card">
+              <img src="assets/react.png" class="card-img-top" alt="AnnualCrop">
+              <div class="overlay"> <!-- Add overlay div -->
+                  <div class="text"> <!-- Content to display on hover -->
+                      <p>React JS</p>
+                  </div>
+              </div>
+              <div class="card-body">
+                  
+              </div>
+          </div>
+      </div>
+
+  </div>
+</div>
+</div>
+
+
+  <!--Contact Section-->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon-email contact-icon email-icon"
+      />
+      <p><a href="mailto:bharathidhereddy27@gmail.com">bharathidhereddy27@gmail.com</a></p>
+    </div>
+  </section>
+  
+  
+ 
+
+ 
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab (tabname) {
+        for(tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+}
+
+      function toggleMenu() {
+        const menu = document.querySelector(".menu-links");
+        const icon = document.querySelector(".hamburger-icon");
+        menu.classList.toggle("open");
+        icon.classList.toggle("open");
+      }
+
+    </script>
+    
+    
+</body>
+</html>
